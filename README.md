@@ -85,3 +85,8 @@ public class App
     }
 }
 ```
+
+実行する
+```
+$ mvn spring-boot:run
+```
