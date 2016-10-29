@@ -90,3 +90,6 @@ public class App
 ```
 $ mvn spring-boot:run
 ```
+
+Webブラウザでhttp://localhost:8080/ にアクセス
+
