@@ -93,3 +93,15 @@ $ mvn spring-boot:run
 
 Webブラウザでhttp://localhost:8080/ にアクセス
 
+
+# OpenShiftでSpringBootアプリケーションを動かす
+
+これを使うとOpenShift上でs2iしてSpringBootアプリを動かせる？
+
+* How to deploy Spring Boot applications to OpenShift
+  * https://blog.codecentric.de/en/2016/03/deploy-spring-boot-applications-openshift/
+
+* STI builder image for building and running maven based Spring Boot applications
+  * codecentric/springboot-maven3-centos
+  * https://hub.docker.com/r/codecentric/springboot-maven3-centos/
+
