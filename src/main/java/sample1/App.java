@@ -13,7 +13,7 @@ public class App
     @RequestMapping("/")
     @ResponseBody
     public String home() {
-        return "Hello, Spring Boot 3!";
+        return "Hello, Spring Boot 4 !";
     }
 
     public static void main( String[] args )
