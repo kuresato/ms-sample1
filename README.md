@@ -54,6 +54,18 @@ pom.xmlを編集
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <!-- 追加: ここから -->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+      </plugin>
+    </plugins>
+  </build>
+  <!-- 追加: ここまで -->
+
 </project>
 ```
 
@@ -96,7 +108,18 @@ Webブラウザでhttp://localhost:8080/ にアクセス
 
 # OpenShiftでSpringBootアプリケーションを動かす
 
-これを使うとOpenShift上でs2iしてSpringBootアプリを動かせる？
+## その１
+
+* OpenShift S2I Builder for Java
+  * https://github.com/jorgemoralespou/s2i-java
+
+以下のJSONをOpenShiftに登録すると、ビルダーイメージが使えるようになる
+
+```
+oc create -f https://raw.githubusercontent.com/jorgemoralespou/s2i-java/master/ose3/s2i-java-imagestream.json
+```
+
+## その２
 
 * How to deploy Spring Boot applications to OpenShift
   * https://blog.codecentric.de/en/2016/03/deploy-spring-boot-applications-openshift/

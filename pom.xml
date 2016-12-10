@@ -39,4 +39,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <!-- 追加: ここから -->
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <version>1.4.2.RELEASE</version>
+      </plugin>
+    </plugins>
+  </build>
+  <!-- 追加: ここまで -->
+
 </project>
